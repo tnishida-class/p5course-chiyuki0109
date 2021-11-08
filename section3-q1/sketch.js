@@ -10,15 +10,22 @@ function setup(){
 
 function draw(){
   background(160, 192, 255);
-  count = (count + 1) % cycle;
+
+   if(keyIsPressed == true){
+
+  count = (count + 2) % cycle;
+   }
+   else{
+   count = (count + 1) % cycle;
+   }
 
   if(count>40 && count<70){
      ellipse(width / 2, height / 2, count);
   }
-  else{
-
+ else{
 
   ellipse(width / 2, height / 2, 50);
   }
 
-}
+
+   }
