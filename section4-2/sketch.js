@@ -17,6 +17,12 @@ function draw(){
     b.x += b.vx;
     b.y += b.vy;
   }
+  //Drowの中にボールが増えるロジックを入れる
+  if(){
+    const b = { x: witdth/2, y: height/2, size: 20, vx: random(2), vy
+    : random(2) };
+    balls.push(b);
+   }
 }
 
 function mouseDragged(){
@@ -24,7 +30,7 @@ function mouseDragged(){
   const dy = mouseY - pmouseY;
   if(mag(dx, dy) > 5){
     const b = { x: mouseX, y: mouseY, size: 20, vx: dx, vy: dy };
-    balls.push(b);
+    balls.push(b);//ボールを増やすコード
   }
 }
 
